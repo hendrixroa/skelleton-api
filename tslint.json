@@ -1,0 +1,15 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "max-classes-per-file": false,
+    "interface-name": false,
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "semicolon": [true, "always", "ignore-bound-class-methods"]
+  },
+  "linterOptions": {
+    "exclude": []
+  }
+}

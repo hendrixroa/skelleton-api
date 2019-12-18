@@ -56,9 +56,7 @@ export function parseConfig<T extends ConfigMap>(
         }
       });
 
-      const secrets: any = JSON.parse(process.env.BLACKHOLE || '{}');
-      const ssSecrets: any = JSON.parse(process.env.BLACKHOLE_SS || '{}');
-      process.env = { ...ssSecrets, ...secrets,  ...process.env };
+      process.env = { ...process.env };
 
       const cleanEnv = envalid.cleanEnv(process.env, envMap, {
         dotEnvPath: '',

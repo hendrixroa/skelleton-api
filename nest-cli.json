@@ -1,0 +1,31 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "monorepo": true,
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "tsconfig.json"
+  },
+  "projects": {
+    "api": {
+      "type": "application",
+      "entryFile": "main",
+      "sourceRoot": "src/apps/api"
+    },
+    "userCreator": {
+      "type": "application",
+      "entryFile": "main",
+      "sourceRoot": "src/apps/userCreator"
+    },
+    "queueConsumer": {
+      "type": "application",
+      "entryFile": "main",
+      "sourceRoot": "src/apps/queueConsumer"
+    },
+    "userBackup": {
+      "type": "application",
+      "entryFile": "main",
+      "sourceRoot": "src/apps/userBackup"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "watch": ["./"],
+  "ignore": ["test/*", "swagger*.json", "cookies.json", "dist", ".idea/*"],
+  "ext": "ts,env,yml,js,json"
+}

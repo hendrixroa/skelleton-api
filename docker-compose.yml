@@ -1,0 +1,38 @@
+version: '3.2'
+services:
+  # POSTGRES
+  postgres:
+    image: postgres:10-alpine
+    networks:
+      - skelleton
+    ports:
+      - 8001:5432
+  # REDIS
+  redis:
+    image: redis:latest
+    networks:
+      - skelleton
+    ports:
+      - 8002:6379
+  # API
+  api:
+    build:
+      context: .
+    networks:
+      - skelleton
+    ports:
+      - 5000:5000
+    env_file:
+      - ./env/.env
+      - ./env/api.env
+    environment:
+      - APP=api
+      - DATABASE_URL=postgres://postgres@postgres/postgres
+      - REDIS_URL=redis://redis
+    depends_on:
+      - postgres
+      - redis
+
+
+networks:
+  skelleton:

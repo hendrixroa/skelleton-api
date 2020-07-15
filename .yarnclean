@@ -1,0 +1,68 @@
+# test directories
+__tests__
+test
+tests
+powered-test
+
+# asset directories
+docs
+doc
+website
+images
+assets
+
+# examples
+example
+examples
+
+# code coverage directories
+coverage
+.nyc_output
+
+# build scripts
+Makefile
+Gulpfile.js
+Gruntfile.js
+
+# configs
+appveyor.yml
+circle.yml
+codeship-services.yml
+codeship-steps.yml
+wercker.yml
+.tern-project
+.gitattributes
+.editorconfig
+.*ignore
+.eslintrc
+.jshintrc
+.flowconfig
+.documentup.json
+.yarn-metadata.json
+.travis.yml
+.coveralls.yml
+
+# misc
+*.md
+
+# asset directories
+docs
+!googleapis/build/src/apis/docs
+
+# Log files
+*.log
+
+# Authors
+AUTHORS
+
+# Github folders
+.github/
+
+# Logos
+*.svg
+
+# Others
+usage.txt
+readme.markdown
+.bettercodehub.yml
+

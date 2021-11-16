@@ -34,7 +34,7 @@
     "@nestjs/swagger": "^4.5.4",
     "@nestjs/typeorm": "^7.0.0",
     "amazon-cognito-identity-js": "^4.2.3",
-    "aws-sdk": "^2.680.0",
+    "aws-sdk": "^2.814.0",
     "cache-manager": "^3.3.0",
     "cache-manager-redis-store": "^2.0.0",
     "class-transformer": "^0.2.3",

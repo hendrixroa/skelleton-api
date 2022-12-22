@@ -47,7 +47,7 @@
     "express": "^4.17.1",
     "helmet": "^3.22.0",
     "ioredis": "^4.17.3",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwk-to-pem": "^2.0.3",
     "lodash": "^4.17.15",
     "module-alias": "^2.2.2",
